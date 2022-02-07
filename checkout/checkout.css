@@ -211,4 +211,67 @@ transform: scale(1);
 background-color: #1434CB;
 }
 
+.promotion {
+  margin: 8rem 2rem 2rem 2rem;
+  
+}
 
+.promotion .code {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #c7c7cc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.promotion .code input[type='text'] {
+  outline: none;
+  border: none;
+  border-right: 1px solid #c7c7cc;
+  flex-grow: 2;
+  color: #8E8E93;
+}
+
+.codebtn {
+  cursor: pointer;
+  border: none;
+  color: #54B2CF;
+  flex-grow: 1;
+  background-color: #FFFFFF;
+}
+
+.promotion .flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.promotion .total {
+  padding-top: 1rem;
+  border-top: 1px solid #c7c7cc;
+  font-weight: bold;
+}
+
+.promotion .total .sumTotal {
+  font-size: 28px;
+}
+
+.payBtn {
+  display: block;
+  width: 80%;
+  cursor: pointer;
+  background-color: #323232;
+  border-radius: 4rem;
+  color: #FFFFFF;
+  padding: 1rem 6rem;
+  outline: none;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+.payBtn:hover {
+  background-color: #FFFFFF;
+  color: #323232;
+}
