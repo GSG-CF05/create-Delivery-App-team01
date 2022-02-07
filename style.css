@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header-home {
+    display: flex;
+    margin: 10% 10%;
+}
+.image-header {
+    display: flex;
+    justify-content: right;
+    flex: 1;
+}
+.title-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #323232;
+    font-family: "Rockwell Extra Bold";
+}
+.title-header span{
+    color: #8E8E93;
+    font-size: 17px;
+}
+.fa-map-marker-alt{
+    padding-right: 3px;
+    padding-left: 6px;
+}
