@@ -39,3 +39,19 @@
     background-color: #54B2CF;
     color: white;
 }
+.products{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.product-card{
+    background-color: #E4F3F7;
+    border-radius: 16px;
+    margin: 3% 3%;
+    padding: 1% 6% 1% 6%;
+}
+
+.product-card h2 {
+    font-size: 17px;
+    font-weight: bold;
+}
