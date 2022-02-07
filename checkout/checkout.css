@@ -72,3 +72,143 @@ margin: 1rem;
   flex: 1;
 }
 
+.paymentSection {
+  height: 200px;
+  margin: 2rem;
+}
+
+
+.paymentSection .masterCard,
+.paymentSection .payPal
+{
+  display: flex;
+  margin: 1rem 0;
+} 
+
+.masterCard > *,
+.payPal > *
+{
+align-self: center;
+}
+
+.paymentSection .masterCard h3,
+.paymentSection .payPal h3 {
+  flex-grow: 2;
+  margin-left: 1rem;
+}
+
+.paymentSection .masterCard img,
+.paymentSection .payPal img{
+  flex-grow: 0.1;
+  background-color: #E4F3F7;
+  padding: 3px;
+  border-radius: 5px;
+ }
+
+  
+ .radio {
+   display: inline-flex;
+   
+ }
+
+ .radio--input {
+   display: none;
+ }
+
+ .radio-- {
+   width: 1.25rem;
+   height: 1.25em;
+   border: 2px solid #323232;
+   border-radius: 50%;
+   padding: 2px;
+ }
+
+ .radio--::after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   display: block;
+   background-color: #323232;
+   border-radius: 50%;
+   transform: scale(0);
+ }
+
+ .radio--input:checked + .radio--::after{
+transform: scale(1);
+ }
+
+.cards {
+  display: flex;
+  overflow-x: scroll;
+}
+
+
+.mCrad,
+.vCard {
+  height: 117px;
+  min-width: 160px;
+  background-color: red;
+  border-radius: 16px;
+  margin: 1rem;
+}
+
+.mCrad {
+  background-color: #323232;
+  position: relative;
+}
+
+.mCrad .masterInfo {
+  display: flex;
+}
+.mCrad .masterInfo p,
+.vCard .visaInfo p,
+.mCrad .masterInfo span
+{
+  color: #FFFFFF;
+}
+
+.mCrad .masterInfo,
+.vCard .visaInfo
+{
+  display: flex;
+}
+
+.mCrad .masterInfo span,
+.vCard .visaInfo span {
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
+.mCrad .masterImage,
+.vCard .masterImage
+{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.vCard .masterImage {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.chekBox {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: baseline;
+  margin-top: 4rem;
+}
+
+.chekBox img {
+  background-color: #E4F3F7;
+  border: 1px solid green;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.vCard {
+  position: relative;
+background-color: #1434CB;
+}
+
+
