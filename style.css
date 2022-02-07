@@ -26,3 +26,16 @@
     padding-right: 3px;
     padding-left: 6px;
 }
+.tab-button{
+    background-color: #E4F3F7;
+    border: 1px solid #E4F3F7;
+    border-radius: 15px;
+    padding: 2% 5%;
+    margin: 1% 1% 1% 1%;
+    color: #54B2CF ;
+    font-size: 14px;
+}
+.tab-button:hover{
+    background-color: #54B2CF;
+    color: white;
+}
