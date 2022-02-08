@@ -39,6 +39,9 @@
     background-color: #54B2CF;
     color: white;
 }
+.for-web {
+    display: none;
+}
 .products{
     display: flex;
     flex: 1;
@@ -70,5 +73,19 @@ footer{
 footer > img {
     /*display: flex;*/
     margin: 1% 1% 1% 8%;
-
 }
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .product-card {
+        margin: 3% 2%;
+    }
+    .for-web{
+        display: inline;
+    }
+}
+@media screen and (min-width: 1024px){
+    .for-web{
+       display: inline;
+    }
+}
+    
