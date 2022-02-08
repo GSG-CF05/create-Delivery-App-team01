@@ -208,12 +208,16 @@ transform: scale(1);
 }
 .vCard {
   position: relative;
-background-color: #1434CB;
+  background-color: #1434CB;
 }
 
 .promotion {
   margin: 8rem 2rem 2rem 2rem;
-  
+}
+
+.promotion h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .promotion .code {
