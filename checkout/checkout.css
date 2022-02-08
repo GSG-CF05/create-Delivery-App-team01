@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Readex Pro', sans-serif;
+  color: #323232;
+}
+.main {
+display: flex;
+}
+
+.headSection {
+  flex: 1;
+}
+.checkout {
+text-align: center;
+padding-top: 2rem;
+display: flex;
+margin: 1rem;
+}
+
+.arrow-icon img {
+  cursor: pointer;
+}
+.checkout .title {
+  flex-grow: 2;
+  align-self: center;
+}
+
+.location {
+  background-color: #E4F3F7;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+.location .street,
+.location .time {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.location .time {
+  border-left: 1px solid 
+  #c7c7cc;
+}
+
+.location .street img,
+.location .time img{
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+
+
+
+
+.cardInformation {
+  display: none;
+  width: 100%;
+  height: 200px;
+  background-color: red;
+}
+
+
+
+.cart {
+  display: none;
+  width: 100%;
+  background-color: green;
+  flex: 1;
+}
+
+.paymentSection {
+  height: 200px;
+  margin: 2rem;
+}
+
+
+.paymentSection .masterCard,
+.paymentSection .payPal
+{
+  display: flex;
+  margin: 1rem 0;
+} 
+
+.masterCard > *,
+.payPal > *
+{
+align-self: center;
+}
+
+.paymentSection .masterCard h3,
+.paymentSection .payPal h3 {
+  flex-grow: 2;
+  margin-left: 1rem;
+}
+
+.paymentSection .masterCard img,
+.paymentSection .payPal img{
+  flex-grow: 0.1;
+  background-color: #E4F3F7;
+  padding: 3px;
+  border-radius: 5px;
+ }
+
+  
+ .radio {
+   display: inline-flex;
+   
+ }
+
+ .radio--input {
+   display: none;
+ }
+
+ .radio-- {
+   width: 1.25rem;
+   height: 1.25em;
+   border: 2px solid #323232;
+   border-radius: 50%;
+   padding: 2px;
+ }
+
+ .radio--::after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   display: block;
+   background-color: #323232;
+   border-radius: 50%;
+   transform: scale(0);
+ }
+
+ .radio--input:checked + .radio--::after{
+transform: scale(1);
+ }
+
+.cards {
+  display: flex;
+  overflow-x: scroll;
+}
+
+
+.mCrad,
+.vCard {
+  height: 117px;
+  min-width: 160px;
+  background-color: red;
+  border-radius: 16px;
+  margin: 1rem;
+}
+
+.mCrad {
+  background-color: #323232;
+  position: relative;
+}
+
+.mCrad .masterInfo {
+  display: flex;
+}
+.mCrad .masterInfo p,
+.vCard .visaInfo p,
+.mCrad .masterInfo span
+{
+  color: #FFFFFF;
+}
+
+.mCrad .masterInfo,
+.vCard .visaInfo
+{
+  display: flex;
+}
+
+.mCrad .masterInfo span,
+.vCard .visaInfo span {
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
+.mCrad .masterImage,
+.vCard .masterImage
+{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.vCard .masterImage {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.chekBox {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: baseline;
+  margin-top: 4rem;
+}
+
+.chekBox img {
+  background-color: #E4F3F7;
+  border: 1px solid green;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.vCard {
+  position: relative;
+  background-color: #1434CB;
+}
+
+.promotion {
+  margin: 8rem 2rem 2rem 2rem;
+}
+
+.promotion h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.promotion .code {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #c7c7cc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.promotion .code input[type='text'] {
+  outline: none;
+  border: none;
+  border-right: 1px solid #c7c7cc;
+  flex-grow: 2;
+  color: #8E8E93;
+}
+
+.codebtn {
+  cursor: pointer;
+  border: none;
+  color: #54B2CF;
+  flex-grow: 1;
+  background-color: #FFFFFF;
+}
+
+.promotion .flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.promotion .total {
+  padding-top: 1rem;
+  border-top: 1px solid #c7c7cc;
+  font-weight: bold;
+}
+
+.promotion .total .sumTotal {
+  font-size: 28px;
+}
+
+.payBtn {
+  display: block;
+  width: 80%;
+  cursor: pointer;
+  background-color: #323232;
+  border-radius: 4rem;
+  color: #FFFFFF;
+  padding: 1rem 6rem;
+  outline: none;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+.payBtn:hover {
+  background-color: #FFFFFF;
+  color: #323232;
+}
