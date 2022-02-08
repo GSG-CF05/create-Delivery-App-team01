@@ -54,7 +54,74 @@ header i {
  .discount:nth-child(4) {
     background-color: #b88af8;
  }
+ .products {
+    display: flex;
+    flex-direction: column;
 
+}
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    max-height: 200px;
+}
+.product img {
+    background-color: #e4f3f7;
+    border-radius: 5px;
+}
+.product .discription {
+    width: 70%;
+}
+.product .discription p:first-child{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #323232;
+    font-size: 15px;
+}
+.product .discription p:nth-child(2){
+    color: #8e8e93;
+    font-size: 13px;
+}
+.product .discription small {
+    font-size: 9px;
+    color: white;
+    padding: 2px 5px;
+}
+.product .discription small.tall{
+    background-color: #54B2CF;
+    border-radius: 48px;
+    width: 37px;
+    height: 16px;
+}
+.product .discription small.short{
+    width: 47px;
+    height: 16px;
+    border-radius: 48px;
+    background-color: #3CD2D2;
+    
+}
+.product .discription small.grand{
+    background-color: #B88AF8;
+    border-radius: 48px;
+
+}
+.product .discription h4{
+    font-size: 24px;
+    color: #323232;
+    font-weight: normal;
+}
+.product .counter {
+    display: flex;
+    flex-direction: column;
+
+}
+.product .counter small {
+    font-size: 17px;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
 
 
 
