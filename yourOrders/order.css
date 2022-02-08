@@ -122,6 +122,50 @@ header i {
     margin-bottom: .5rem;
     font-weight: 500;
 }
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.total small {
+    padding: 10px;
+    font-size: 15px;
+}
+.total p {
+    padding: 10px;
+    font-size: 28px;
+}
+.checkout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.checkout .plus {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #54B2CF;
+    color: white;
+    font-size: 15px;
+    border: none;
+    
+}
+.checkout .check {
+    background-color: #323232;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
