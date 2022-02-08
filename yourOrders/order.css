@@ -3,13 +3,16 @@
     margin: 0;
     padding: 0;
 }
+body {
+    min-height: 100vh;
 
+}
 header {
     display: flex;
     align-items: center;
     width: 55%;
     justify-content: space-between;
-    margin: 2rem 0 2rem 1.2rem;
+    margin: 1.5rem 0 2rem 1.2rem;
     flex-wrap: nowrap;
     color: #323232;
 }
@@ -25,7 +28,7 @@ header i {
 .discounts {
    max-width: 100%;
    overflow-x: auto;
-   max-height: 90px;
+   min-height: 130px;
    display: flex;
 }
 .discounts::-webkit-scrollbar {
@@ -34,12 +37,16 @@ header i {
 .discount {
    min-width: 320px;
    background-color: blueviolet;
-   margin: 0.5rem;
+   margin: 1rem;
    padding: 15px;
    border-radius: 10px;
    text-align: center;
    color: #ffffff;
    font-size: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
 } 
 
 .discount:first-child {
@@ -57,7 +64,7 @@ header i {
  .products {
     display: flex;
     flex-direction: column;
-
+   
 }
 .product {
     display: flex;
@@ -65,7 +72,7 @@ header i {
     justify-content: space-between;
     width: 100%;
     padding: 1rem;
-    max-height: 200px;
+    min-height: 100px;
 }
 .product img {
     background-color: #e4f3f7;
@@ -116,23 +123,27 @@ header i {
 .product .counter {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    justify-content: center;
+    
+    height: 100%;
 }
-.product .counter small:first-child{
+.product .counter div:first-child, .product .counter div:last-child{
     border: 1px solid rgba(128, 128, 128, 0.514);
-    padding: 1px 3px;
+    /* padding: 1px 3px; */
+    text-align: center;
     border-radius: 50%;
-
-}
-.product .counter small:last-child{
-    border: 1px solid rgba(128, 128, 128, 0.548);
-    padding: 1px 3px;
-    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 22px;
+    
 }
-.product .counter small {
+
+.product .counter div {
     font-size: 17px;
     margin-bottom: .5rem;
     font-weight: 500;
@@ -159,24 +170,32 @@ header i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
+    margin: 2rem 1rem .3rem 1rem;
 }
 .checkout .plus {
-    padding: 15px;
+   text-align: center;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     background-color: #54B2CF;
     color: white;
-    font-size: 15px;
+    font-size: 17px;
     border: none;
     cursor: pointer;
 }
+
 .checkout .check {
     background-color: #323232;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 64px;
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     cursor: pointer;
+    border: none;
+    outline: none;
+    width: 70%;
+    height: 55px;
+
 }
 
 
