@@ -87,5 +87,15 @@ footer > img {
     .for-web{
        display: inline;
     }
+    .tab-button{
+        border: 1px solid #E4F3F7;
+        border-radius: 30px;
+        padding: 1% 5%;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .product-card {
+        margin: 3% 1%;
+    }
 }
     
