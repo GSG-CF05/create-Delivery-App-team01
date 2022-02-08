@@ -88,6 +88,7 @@ header i {
     font-size: 9px;
     color: white;
     padding: 2px 5px;
+    
 }
 .product .discription small.tall{
     background-color: #54B2CF;
@@ -117,12 +118,28 @@ header i {
     flex-direction: column;
 
 }
+.product .counter small:first-child{
+    border: 1px solid rgba(128, 128, 128, 0.514);
+    padding: 1px 3px;
+    border-radius: 50%;
+
+}
+.product .counter small:last-child{
+    border: 1px solid rgba(128, 128, 128, 0.548);
+    padding: 1px 3px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .product .counter small {
     font-size: 17px;
     margin-bottom: .5rem;
     font-weight: 500;
+    cursor: pointer;
 }
 .total {
+    border-top: 1px solid rgba(128, 128, 128, 0.329);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -131,10 +148,12 @@ header i {
 .total small {
     padding: 10px;
     font-size: 15px;
+    color: #323232;
 }
 .total p {
     padding: 10px;
     font-size: 28px;
+    color: #323232;
 }
 .checkout {
     display: flex;
@@ -149,12 +168,15 @@ header i {
     color: white;
     font-size: 15px;
     border: none;
-    
+    cursor: pointer;
 }
 .checkout .check {
     background-color: #323232;
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
 }
 
 
