@@ -21,7 +21,40 @@ header i {
     padding:  1px 3px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
 }
- 
+
+.discounts {
+   max-width: 100%;
+   overflow-x: auto;
+   max-height: 90px;
+   display: flex;
+}
+.discounts::-webkit-scrollbar {
+   display: none;
+}
+.discount {
+   min-width: 320px;
+   background-color: blueviolet;
+   margin: 0.5rem;
+   padding: 15px;
+   border-radius: 10px;
+   text-align: center;
+   color: #ffffff;
+   font-size: 20px;
+} 
+
+.discount:first-child {
+   background-color: #54b2cf;
+}
+.discount:nth-child(2) {
+   background-color: #b88af8;
+}
+.discount:nth-child(3) {
+    background-color: #54b2cf;
+ }
+ .discount:nth-child(4) {
+    background-color: #b88af8;
+ }
+
 
 
 
