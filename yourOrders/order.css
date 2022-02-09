@@ -7,6 +7,11 @@ body {
     min-height: 100vh;
 
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -49,18 +54,12 @@ header i {
    flex-direction: column;
 } 
 
-.discount:first-child {
+.discount:first-child, .discount:nth-child(3), .discount:nth-child(5) {
    background-color: #54b2cf;
 }
-.discount:nth-child(2) {
+.discount:nth-child(2), .discount:nth-child(4), .discount:nth-child(6) {
    background-color: #b88af8;
 }
-.discount:nth-child(3) {
-    background-color: #54b2cf;
- }
- .discount:nth-child(4) {
-    background-color: #b88af8;
- }
  .products {
     display: flex;
     flex-direction: column;
@@ -75,6 +74,8 @@ header i {
     min-height: 100px;
 }
 .product img {
+    max-width: 100%;
+    width: auto;
     background-color: #e4f3f7;
     border-radius: 5px;
 }
@@ -188,7 +189,7 @@ header i {
     background-color: #323232;
     padding: 10px 20px;
     border-radius: 64px;
-    color: white;
+    
     font-size: 20px;
     cursor: pointer;
     border: none;
@@ -197,32 +198,184 @@ header i {
     height: 55px;
 
 }
+.checkout .check a {
+    color: white;
+}
+.ponus {
+    display: none;
+}
 
 
 
 
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header h3 {
+        font-size: 2rem;
+    }
+    header a {
+        font-size: 2rem;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        padding:  2px 6px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
+    }
+    .discounts {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .discount {
+        height: 5rem;
+    }
+    .product {
+        width: 43%;
+        font-size: 30px;
+        flex-direction: column;
+    }
+
+
+    .product .image {
+        width: 100%;
+    }
+
+
+    .product img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        /* height: 300px; */
+        object-fit: cover;
+    }
+    .product .discription p:first-child {
+        font-size: 25px;
+    }
+    .product .discription p:nth-child(2) {
+        font-size: 21px;
+    }
+    .products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -7rem;
+    }
+   .product .counter {
+       flex-direction: row;
+       justify-content: space-evenly;
+       width: 100%;
+
+   }
+   .product .counter div:first-child, .product .counter div:last-child{
+    border: 1px solid rgba(128, 128, 128, 0.514);
+    /* padding: 1px 3px; */
+    text-align: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    
+   }
+
+    .product .counter div {
+        font-size: 17px;
+        margin-bottom: .5rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .product .discription small {
+        margin-top: .4rem;
+        font-size: 23px;
+        height: 40px;
+    }
+    .product .discription small.tall{
+        background-color: #54B2CF;
+        border-radius: 48px;
+    }
+    .product .discription small.short{
+        border-radius: 48px;
+        background-color: #3CD2D2;
+        
+    }
+    .product .discription small.grand{
+        background-color: #B88AF8;
+        border-radius: 48px;
+
+    }
+    .product .discription h4 {
+        
+        margin: 1rem 0;
+    }
+    
+    .total {
+        width: 88%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .total small, .total  p{
+        font-size: 2rem;
+    }
+    .checkout {
+        width: 84%;
+        margin: auto;
+        margin-top: 2rem;
+        
+    }
+}
 
 
 
 
+@media screen and (min-width: 1024px) {
+    
+    .products {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .discounts {
+        margin-left: 8.5rem;
+        flex-wrap: wrap;
+    }
+    .product {
+        width: 35%;
+        margin-left: 8.5rem;
+    }
 
+    .ponus {
+        display: flex;
+    }
+    .product .discription p:first-child {
+        font-size: 2rem;
+    }
+    .product .discription p:nth-child(2) {
+        font-size: 1.5rem;
+    }
+    .product .discription small {
+        font-size: .8rem;
+    }
+    .total {
+        width: 80%;
+        margin-left: 8.5rem;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    .checkout {
+        width: 80%;
+        margin-left: 8.5rem;
+    }
+    .checkout .check {
+        width: 40%;
+    }
+    body {
+        background-color: #f4bb3f59;
+        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+}
