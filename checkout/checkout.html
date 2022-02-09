@@ -34,12 +34,118 @@
           </div>
   
           <div class="cardInformation">
+            <form action="" method="post">
+              <div class="cardNumber">
+                <label for="cardNumber">cardNumber</label>
+                <input type="text" name="cardNumber" placeholder="0000 00000 0000 000">
+              </div>
+             
+              <div class="cardData">
+                <div class="CVVcode">
+                  <label for="CVVcode">CVV Code</label>
+                  <input type="text" name="CVVcode" id="CVVcode" placeholder="000">
+                </div>
+
+                <div class="expiration">
+
+                  <label for="expiration">Expiration</label>
+                  <div class="expirationDate">
+                    <input type="number" min="0" max="12" name="expiration" id="expiration" placeholder="MM">
+                  <input type="number" min="0" max="12" name="expiration" id="expiration" placeholder="YY">
+                  </div>
+                  
   
+                </div>
+
+              </div>
+             
+              
+              <div class="nameOnCard">
+                <label for="nameOnCard">Name On Card</label>
+                <input type="text" name="nameOnCard" id="nameOnCard" placeholder="Name">
+              </div>
+              <input type="submit" name="" id="" class="payBtn " value="pay">
+            </form>
+            
           </div>
         </section>
   
         <section class="cart">
+
+          <div class="order">
+            <div class="image">
+              <img src="../checkout/icons/caffe-americano 1.svg" alt="">
+            </div>
+            <div class="details">
+              <h4>Caffe Latte</h4>
+              <p class="drinksType">Milk and espresso</p>
+              <p class="size tall">TALL</p>
+              <p class="price">$ 5.99</p>
+            </div>
+
+            <div class="quantity">
+              <button class="sign"><img src="../checkout/icons/Plus.svg" alt="plus sign"></button>
+              <div class="">2</div>
+              <button class="sign minus"><img src="../checkout/icons/Minus.svg" alt="minus sign"></button>
+            </div>
+
+
+          </div>
+
+          <div class="order">
+            <div class="image">
+              <img src="../checkout/icons/caffe-americano 1 (1).svg" alt="">
+            </div>
+
+            <div class="details">
+              <h4>Original Americano</h4>
+              <p class="drinksType">Classic blend</p>
+              <p class="size short">SHORT</p>
+              <p class="price">$ 4.99</p>
+            </div>
+
+            <div class="quantity">
+              <button class="sign"><img src="../checkout/icons/Plus.svg" alt="plus sign"></button>
+              <div class="">2</div>
+              <button class="sign minus"><img src="../checkout/icons/Minus.svg" alt="minus sign"></button>
+            </div>
+
+          </div>
+
+          <div class="order">
+            <div class="image">
+              <img src="../checkout/icons/caffe-americano 1 (2).svg" alt="">
+            </div>
+
+            <div class="details">
+              <h4>Peppermint Mocha</h4>
+              <p class="drinksType">Real chocolate and mint</p>
+              <p class="size grande">GRANDE</p>
+              <p class="price">$ 18.98</p>
+            </div>
+
+            <div class="quantity">
+              <button class="sign"><img src="../checkout/icons/Plus.svg" alt="plus sign"></button>
+              <div class="">2</div>
+              <button class="sign minus"><img src="../checkout/icons/Minus.svg" alt="minus sign"></button>
+            </div>
+
+          </div>
+
+          <div class="flex">
+            <p>Sub total</p>
+            <p>$ 29.96</p>
+          </div>
   
+          <div class="flex">
+            <p>Delivery</p>
+            <p>$ 2.99</p>
+          </div>
+  
+          <div class="flex total">
+            <p>Total</p>
+            <p class="sumTotal">$ 32.95</p>
+          </div>
         </section>
       </section>
      
@@ -80,7 +186,7 @@
         </div>
 
         <div class="vCard">
-          <img class="masterImage" src="../checkout/icons/Visa.svg" alt="">
+          <img class="masterImage" src="../checkout/icons/Logo.svg" alt="">
           <div class="visaInfo">
             
             <div class="chekBox">

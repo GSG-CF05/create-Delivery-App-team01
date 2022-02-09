@@ -53,30 +53,141 @@ margin: 1rem;
 }
 
 
-
-
-
 .cardInformation {
   display: none;
   width: 100%;
-  height: 200px;
-  background-color: red;
+  height: 78vh;
+  padding: 2rem;
 }
 
 
+.cardInformation > div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 3rem;
+
+}
+
+.cardData {
+  display: flex;
+}
+
+.expirationDate {
+  display: flex;
+}
+
+.cardInformation input {
+  margin: 1rem;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #c7c7cc;
+}
+
+.cardNumber,
+.nameOnCard,
+.CVVcode
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.expiration label,
+.CVVcode label,
+.cardNumber label,
+.nameOnCard label 
+{
+  padding-left: 1rem;
+}
 
 .cart {
   display: none;
   width: 100%;
-  background-color: green;
   flex: 1;
+  padding: 3rem;
 }
+
+.cart .flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.cart .order {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+
+.order .details {
+  flex-grow: 2;
+  margin-left: 1rem;
+}
+
+.order .details .drinksType {
+  color: #8E8E93;
+  font-size: 0.8rem;
+}
+
+.order .details .size {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 7px;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.order .details .price {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.order .details .tall {
+  background-color: #54B2CF;
+}
+
+.order .details .short {
+  background-color: #3CD2D2;
+}
+
+.order .details .grande {
+  background-color: #B88AF8;
+}
+
+
+.order .image {
+  background-color: #E4F3F7;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+
 
 .paymentSection {
   height: 200px;
   margin: 2rem;
 }
 
+.quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.quantity .sign {
+  cursor: pointer;
+  padding: 5px;
+  outline: none;
+  background-color: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 50%;
+}
+
+.quantity .minus {
+  padding-bottom: 0.5rem;
+}
 
 .paymentSection .masterCard,
 .paymentSection .payPal
@@ -251,13 +362,13 @@ transform: scale(1);
   font-size: 1rem;
 }
 
-.promotion .total {
+ .total {
   padding-top: 1rem;
   border-top: 1px solid #c7c7cc;
   font-weight: bold;
 }
 
-.promotion .total .sumTotal {
+ .total .sumTotal {
   font-size: 28px;
 }
 
@@ -278,4 +389,32 @@ transform: scale(1);
 .payBtn:hover {
   background-color: #FFFFFF;
   color: #323232;
+}
+
+@media only screen and (max-width: 480px) {
+  main {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cardInformation,
+  .cart {
+    display: block;
+  }
+
+  .paymentSection {
+    display: none;
+  }
+
+  .promotion {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cardInformation,
+  .cart {
+    display: block;
+  }
 }
