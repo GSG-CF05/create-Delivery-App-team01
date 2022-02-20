@@ -1,0 +1,35 @@
+body {
+    min-width:390px;
+    min-height: 844px;
+}
+.div1{
+    position: absolute;
+    min-width: 320px;
+    min-height: 340px;
+    left: 0px;
+    top: 0px;
+    background: #d5edf3;
+}
+.backGround {
+
+    position: absolute;
+    width: 250px;
+    height: 288px;
+    left: 30px;
+    top: 40px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.backButton {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 30px;
+    top: 47px;
+}
+.amount {
+    position: absolute;
+    width: 32px;
+    height: 100px;
+    left: 240px;
+    top: 170px;
+}
